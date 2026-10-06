@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS deped.bronze.stg_public_schools;
