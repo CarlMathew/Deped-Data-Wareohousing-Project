@@ -2,8 +2,8 @@ CREATE TABLE IF NOT EXISTS deped.silver.slvr_number_of_public_schools (
     id BIGINT GENERATED ALWAYS AS IDENTITY,
     region_code STRING,
     education_level STRING,
-    school_year, INT,
-    number_of_schools STRING,
+    school_year STRING,
+    number_of_schools INT,
     source_file STRING,
     inserted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP()
 )

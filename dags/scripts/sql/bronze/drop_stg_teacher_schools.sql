@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS deped.bronze.stg_teachers_school;

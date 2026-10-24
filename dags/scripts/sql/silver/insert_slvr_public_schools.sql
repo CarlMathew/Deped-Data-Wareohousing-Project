@@ -39,12 +39,12 @@ USING (
     WHERE rn = 1
 ) AS source
 ON target.region_code = source.region_code
-AND target.education_level = source.region_level
+AND target.education_level = source.education_level
 AND target.school_year = source.school_year
 
 WHEN MATCHED THEN
     UPDATE SET
-        target.number_of_schools = source.number_of_schools
+        target.number_of_schools = source.number_of_schools,
         target.source_file = source.source_file 
 
 WHEN NOT MATCHED THEN
